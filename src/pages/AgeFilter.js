@@ -42,7 +42,7 @@ function getStyles(name, personName, theme) {
   };
 }
 
-export default function FilterInputs() {
+export default function AgeFilter() {
   const theme = useTheme();
   const [personName, setPersonName] = React.useState([]);
 
@@ -58,12 +58,16 @@ export default function FilterInputs() {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-multiple-name-label">Filter Activity 21/25</InputLabel>
+      <FormControl sx={{ m: 1, width: 120 }}>
+        <InputLabel id="demo-multiple-name-label">All User</InputLabel>
         <Select
           sx={{
             ".css-hfutr2-MuiSvgIcon-root-MuiSelect-icon ": {
               display: "none"
+            },
+            ".css-11wkj1c-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root":{
+                height: 15,
+                width: 15
             }
           }}
           endAdornment={

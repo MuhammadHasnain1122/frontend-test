@@ -18,6 +18,7 @@ import Activity from './Activity';
 
 
 
+
 export const Details = () => {
 
 
@@ -105,7 +106,7 @@ export const Details = () => {
       };
 
     return (
-        <div className='flex w-screen h-screen'>
+        <div className='flex sm:flex-row flex-col' >
             <div className='w-1/4 border-r shadow-lg'>
                 <Sidebar />
             </div>
@@ -120,6 +121,7 @@ export const Details = () => {
                     sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                 >
                 </Typography> 
+                <div className='pt-4'>
                 <Search>
                     <SearchIconWrapper>
                         <SearchIcon />
@@ -129,19 +131,42 @@ export const Details = () => {
                         inputProps={{ 'aria-label': 'search' }}
                     />
                 </Search>
+                </div>
                 <div className='flex justify-center'>
-                <div className="w-full">
+                <div className="w-full pr-4">
                     <Divider/>
                 </div>
                 </div>
 
 
-                <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Item One" {...a11yProps(0)} className='' />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+      <Box sx={{ paddingTop:3, paddingRight:2, paddingLeft:2}}>
+        <Tabs value={value} onChange={handleChange}  style={{backgroundColor:"#eaeef7", color:"black", borderRadius:10}}
+        className=' justify-between'
+        sx={{
+          "	.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected":{
+             color:"black",
+             backgroundColor:"white",
+             borderRadius:"10px"
+          },
+          ".css-1aquho2-MuiTabs-indicator":{
+             backgroundColor:"#eaeef7",
+
+          },
+          ".css-heg063-MuiTabs-flexContainer": {
+            display:"flex",
+            justifyContent:"space-between"
+          },
+          ".css-1h9z7r5-MuiButtonBase-root-MuiTab-root":{
+            fontSize:12,
+            textTransform:"capitalize"
+          }
+        }}>
+          <Tab label="Activity" {...a11yProps(0)}  />
+          <Tab label="Notes" {...a11yProps(1)} />
+          <Tab label="Email" {...a11yProps(2)} />
+          <Tab label="Calls" {...a11yProps(2)} />
+          <Tab label="Tasks" {...a11yProps(2)} />
+          <Tab label="Meetings" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -153,7 +178,6 @@ export const Details = () => {
       <TabPanel value={value} index={2}>
         Item Three
       </TabPanel>
-    </Box>
               
 
             </div>

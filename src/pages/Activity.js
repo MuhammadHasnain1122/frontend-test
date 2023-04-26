@@ -31,6 +31,7 @@ import { Divider } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import AgeFilter from './AgeFilter';
 
 
 const ExpandMore = styled((props) => {
@@ -96,27 +97,12 @@ export default function Activity() {
             <div className='flex flex-row items-center'>
 
                 <FilterInputs />
-
-                <FormControl sx={{ m: 1 }} variant="standard">
-                    <InputLabel htmlFor="demo-customized-select-native">Age</InputLabel>
-                    <NativeSelect
-                        id="demo-customized-select-native"
-                        value={age}
-                        onChange={handleChangeAge}
-                        input={<BootstrapInput />}
-                    >
-                        <option aria-label="None" value="" />
-                        <option value={10}>Ten</option>
-                        <option value={20}>Twenty</option>
-                        <option value={30}>Thirty</option>
-                    </NativeSelect>
-
-                </FormControl>
+                 <AgeFilter/>
 
             </div>
 
             <div className='p-3'>
-                <Typography sx={{ fontWeight: 400 }}>
+                <Typography sx={{ fontWeight: 600 }}>
                     Upcoming Activity
                 </Typography>
             </div>
@@ -190,7 +176,9 @@ export default function Activity() {
                 </CardContent>
             </Card>
 
-            <Card sx={{ maxWidth: 900 }}>
+            <div className='pt-8'>
+        
+            <Card sx={{ maxWidth: 900 }} >
                 <CardHeader
                     avatar={
                         <>
@@ -257,9 +245,11 @@ export default function Activity() {
 
                 </CardContent>
             </Card>
+                    
+            </div>
 
             <div className='p-3'>
-                <Typography sx={{ fontWeight: 400 }}>
+                <Typography sx={{ fontWeight: 500 }}>
                     Activity History
                 </Typography>
             </div>
@@ -267,6 +257,8 @@ export default function Activity() {
             <div>
                 <h1 style={{fontSize:16}}>12 December 2021</h1>
             </div>
+            <div className='pt-4'>
+         
             <Card sx={{ maxWidth: 900 }}>
                 <CardHeader
                     avatar={
@@ -313,6 +305,8 @@ export default function Activity() {
 
                 </CardContent>
             </Card>
+                   
+            </div>
         </div>
     )
 }
