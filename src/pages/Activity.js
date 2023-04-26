@@ -97,7 +97,7 @@ export default function Activity() {
             <div className='flex flex-row items-center'>
 
                 <FilterInputs />
-                 <AgeFilter/>
+                <AgeFilter />
 
             </div>
 
@@ -139,7 +139,7 @@ export default function Activity() {
                     <div className='flex flex-row pb-3'>
 
                         <div>
-                            <CircleIcon />
+                            <CircleIcon className="text-gray-100" />
                         </div>
                         <div className='pl-3'>
                             <p style={{ fontWeight: 700 }}>Prepare Quote For Jerome Bell</p>
@@ -159,15 +159,15 @@ export default function Activity() {
                                 <p style={{ fontSize: 12, color: "gray" }}>Reminder</p>
                                 <p style={{ fontSize: 14 }}> No Reminder</p>
                             </div>
-
+                            <Divider orientation="vertical" flexItem />
                             <div className='flex flex-col'>
-                                <p style={{ fontSize: 12, color: "gray" }}>Reminder</p>
-                                <p style={{ fontSize: 14 }}> No Reminder</p>
+                                <p style={{ fontSize: 12, color: "gray" }}>Task Priority</p>
+                                <p style={{ fontSize: 14 }}>High</p>
                             </div>
-
+                            <Divider orientation="vertical" flexItem />
                             <div className='flex flex-col'>
-                                <p style={{ fontSize: 12, color: "gray" }}>Reminder</p>
-                                <p style={{ fontSize: 14 }}> No Reminder</p>
+                                <p style={{ fontSize: 12, color: "gray" }}>Assigned to</p>
+                                <p style={{ fontSize: 14 }}>Esther Howard</p>
                             </div>
 
                         </div>
@@ -177,52 +177,52 @@ export default function Activity() {
             </Card>
 
             <div className='pt-8'>
-        
-            <Card sx={{ maxWidth: 900 }} >
-                <CardHeader
-                    avatar={
-                        <>
-                            <KeyboardArrowRightIcon />
-                            <EventNoteIcon sx={{ color: "blue" }} />
-                        </>
 
-                    }
-                    action={
-                        <>
-                            <IconButton aria-label="settings">
-                                <Typography sx={{
-                                    fontWeight: 500,
-                                }}>Due:
-                                    <CalendarTodayIcon />
-                                    Today: 12:00 pm
+                <Card sx={{ maxWidth: 900 }} >
+                    <CardHeader
+                        avatar={
+                            <>
+                                <KeyboardArrowRightIcon />
+                                <EventNoteIcon sx={{ color: "blue" }} />
+                            </>
+
+                        }
+                        action={
+                            <>
+                                <IconButton aria-label="settings">
+                                    <Typography sx={{
+                                        fontWeight: 500,
+                                    }}>Due:
+                                        <CalendarTodayIcon />
+                                        Today: 12:00 pm
+                                    </Typography>
+
+                                    <MoreHorizIcon />
+                                </IconButton>
+                            </>
+                        }
+                        title="Task Created Ester"
+                    />
+                    <Divider />
+
+                    <CardContent>
+                        <div className='flex flex-row pb-3'>
+
+                            <div>
+                                <CircleIcon className="text-gray-100" />
+                            </div>
+                            <div className='pl-3'>
+                                <p style={{ fontWeight: 700 }}>Prepare Quote For Jerome Bell</p>
+                                <Typography variant="body2" color="text.secondary">
+                                    This impressive paella is a perfect party dish and a fun meal to cook
+                                    together with your guests. Add 1 cup of frozen peas along with the mussels,
+                                    if you like.
                                 </Typography>
+                            </div>
 
-                                <MoreHorizIcon />
-                            </IconButton>
-                        </>
-                    }
-                    title="Task Created Ester"
-                />
-                <Divider />
-
-                <CardContent>
-                    <div className='flex flex-row pb-3'>
-
-                        <div>
-                            <CircleIcon />
-                        </div>
-                        <div className='pl-3'>
-                            <p style={{ fontWeight: 700 }}>Prepare Quote For Jerome Bell</p>
-                            <Typography variant="body2" color="text.secondary">
-                                This impressive paella is a perfect party dish and a fun meal to cook
-                                together with your guests. Add 1 cup of frozen peas along with the mussels,
-                                if you like.
-                            </Typography>
                         </div>
 
-                    </div>
-
-                    {/* <div className='border 1px solid gray p-3' style={{ borderRadius: 10 }} >
+                        {/* <div className='border 1px solid gray p-3' style={{ borderRadius: 10 }} >
 
                         <div className='flex flex-row justify-between'>
                             <div className='flex flex-col'>
@@ -243,9 +243,9 @@ export default function Activity() {
                         </div>
                     </div> */}
 
-                </CardContent>
-            </Card>
-                    
+                    </CardContent>
+                </Card>
+
             </div>
 
             <div className='p-3'>
@@ -255,57 +255,57 @@ export default function Activity() {
             </div>
 
             <div>
-                <h1 style={{fontSize:16}}>12 December 2021</h1>
+                <h1 style={{ fontSize: 16 }}>12 December 2021</h1>
             </div>
             <div className='pt-4'>
-         
-            <Card sx={{ maxWidth: 900 }}>
-                <CardHeader
-                    avatar={
-                        <>
-                            <KeyboardArrowRightIcon />
-                            <EventNoteIcon sx={{ color: "blue" }} />
-                        </>
 
-                    }
-                    action={
-                        <>
-                            <IconButton aria-label="settings">
-                                <Typography sx={{
-                                    fontWeight: 500,
-                                }}>Due:
-                                    <CalendarTodayIcon />
-                                    Today: 12:00 pm
+                <Card sx={{ maxWidth: 900 }}>
+                    <CardHeader
+                        avatar={
+                            <>
+                                <KeyboardArrowRightIcon />
+                                <EventNoteIcon sx={{ color: "blue" }} />
+                            </>
+
+                        }
+                        action={
+                            <>
+                                <IconButton aria-label="settings">
+                                    <Typography sx={{
+                                        fontWeight: 500,
+                                    }}>Due:
+                                        <CalendarTodayIcon />
+                                        Today: 12:00 pm
+                                    </Typography>
+
+                                    <MoreHorizIcon />
+                                </IconButton>
+                            </>
+                        }
+                        title="Task Created Ester"
+                    />
+                    <Divider />
+
+                    <CardContent>
+                        <div className='flex flex-row pb-3'>
+
+                            <div>
+                                <CircleIcon className="text-green-500" />
+                            </div>
+                            <div className='pl-3'>
+                                <p style={{ fontWeight: 700 }}>Prepare Quote For Jerome Bell</p>
+                                <Typography variant="body2" color="text.secondary">
+                                    This impressive paella is a perfect party dish and a fun meal to cook
+                                    together with your guests. Add 1 cup of frozen peas along with the mussels,
+                                    if you like.
                                 </Typography>
+                            </div>
 
-                                <MoreHorizIcon />
-                            </IconButton>
-                        </>
-                    }
-                    title="Task Created Ester"
-                />
-                <Divider />
-
-                <CardContent>
-                    <div className='flex flex-row pb-3'>
-
-                        <div>
-                            <CircleIcon />
-                        </div>
-                        <div className='pl-3'>
-                            <p style={{ fontWeight: 700 }}>Prepare Quote For Jerome Bell</p>
-                            <Typography variant="body2" color="text.secondary">
-                                This impressive paella is a perfect party dish and a fun meal to cook
-                                together with your guests. Add 1 cup of frozen peas along with the mussels,
-                                if you like.
-                            </Typography>
                         </div>
 
-                    </div>
+                    </CardContent>
+                </Card>
 
-                </CardContent>
-            </Card>
-                   
             </div>
         </div>
     )

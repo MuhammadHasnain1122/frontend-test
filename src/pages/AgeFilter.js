@@ -58,16 +58,16 @@ export default function AgeFilter() {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, width: 120 }}>
-        <InputLabel id="demo-multiple-name-label">All User</InputLabel>
+      <FormControl sx={{ m: 1, width: 120, backgroundColor: "white" }}>
+        <InputLabel id="demo-multiple-name-label" sx={{ color: "gray" }}>All User</InputLabel>
         <Select
           sx={{
             ".css-hfutr2-MuiSvgIcon-root-MuiSelect-icon ": {
               display: "none"
             },
-            ".css-11wkj1c-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root":{
-                height: 15,
-                width: 15
+            ".css-11wkj1c-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root": {
+              height: 15,
+              width: 15
             }
           }}
           endAdornment={

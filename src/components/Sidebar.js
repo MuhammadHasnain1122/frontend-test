@@ -96,6 +96,11 @@ export const Sidebar = () => {
                         <Tabs value={value} onChange={handleChange}
                             textColor="black"
                             indicatorColor="primary"
+                            TabIndicatorProps={{
+                                style: {
+                                    backgroundColor: "#000000",
+                                }
+                            }}
                             aria-label="basic tabs example">
                             <Tab label="Leads info" {...a11yProps(0)} />
                             <Tab label="Address info" {...a11yProps(1)} />

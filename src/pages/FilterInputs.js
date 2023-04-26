@@ -58,8 +58,8 @@ export default function FilterInputs() {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-multiple-name-label">Filter Activity 21/25</InputLabel>
+      <FormControl sx={{ m: 1, width: 300, backgroundColor: "white" }}>
+        <InputLabel id="demo-multiple-name-label" sx={{ color: "gray" }}>Filter Activity 21/25</InputLabel>
         <Select
           sx={{
             ".css-hfutr2-MuiSvgIcon-root-MuiSelect-icon ": {
